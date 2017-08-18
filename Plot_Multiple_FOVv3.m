@@ -1,6 +1,26 @@
 % Plot Multiple FISH FOV
-% David McSwiggen (September 2016)
-clear; clc; %close all;
+% Copyright (C) 2017 David McSwiggen
+
+%%%%%%%%%%%%%%%%%%%%%%%% GNU LICENSE OVERVIEW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This program is free software: you can redistribute it and/or modify it
+% under the terms of the GNU General Public License as published by the
+% Free Software Foundation, either version 3 of the License, or any later
+% version.   
+% This program is distributed in the hope that it will be useful, but
+% WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+% Public License for more details.
+% 
+% If you modify this Program, or any covered work, by linking or combining it
+% with Matlab or any Matlab toolbox, the licensors of this Program grant you 
+% additional permission to convey the resulting work.
+%
+% You should have received a copy of the GNU General Public License along
+% with this program. If not, please see <http://www.gnu.org/licenses/>.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+clear; clc; close all;
 
 
 
@@ -18,9 +38,9 @@ All_Replicates{2} = {'Quant_FISH_rep_3_pos_1','Quant_FISH_rep_3_pos_2','Quant_FI
      'Quant_FISH_rep_3_pos_14','Quant_FISH_rep_3_pos_15','Quant_FISH_rep_3_pos_16','Quant_FISH_rep_3_pos_17'};
 
 
-Directory_input_path = '/Volumes/LaCie/Chen et al data/8144log/log/Quantified_data/';
-Directory_output_path = '/Users/Davidmcswiggen/Google_Drive/Jing_fish_images/Processed_data/8144log/';
-Data_set_name = '8144_6h-1omit';
+Directory_input_path = 'PUT INPUT FILEPATH HERE';
+Directory_output_path = 'PUT OUTPUT FILEPATH HERE';
+Data_set_name = 'CHOOSE A NAME FOR THE DATA SET HERE';
 
 Save_data = 1;
 

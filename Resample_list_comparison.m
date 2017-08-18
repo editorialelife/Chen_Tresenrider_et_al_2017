@@ -1,4 +1,23 @@
 %Random resample list comparison
+% Copyright (C) 2017 David McSwiggen
+
+%%%%%%%%%%%%%%%%%%%%%%%% GNU LICENSE OVERVIEW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This program is free software: you can redistribute it and/or modify it
+% under the terms of the GNU General Public License as published by the
+% Free Software Foundation, either version 3 of the License, or any later
+% version.   
+% This program is distributed in the hope that it will be useful, but
+% WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+% Public License for more details.
+% 
+% If you modify this Program, or any covered work, by linking or combining it
+% with Matlab or any Matlab toolbox, the licensors of this Program grant you 
+% additional permission to convey the resulting work.
+%
+% You should have received a copy of the GNU General Public License along
+% with this program. If not, please see <http://www.gnu.org/licenses/>.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear all;clc
 
 
@@ -8,7 +27,7 @@ clear all;clc
 bootstrap_sample_size = 450;
 n_bootstrap = 1000;
 
-Output_filepath = '/Users/Davidmcswiggen/Google_Drive/Jing_fish_images/Processed_data/Data_set_comparisons_use_this/';
+Output_filepath = 'CHOOSE AN OUTPUT FILEPATH';
 Case_name = '8144log_vs_8144_6h';
 %Column 1: Number paired (LUTI)
 %Column 2: Number TRITC alone (False neg)
@@ -20,12 +39,12 @@ Case_name = '8144log_vs_8144_6h';
 %Column 8: Fraction of unpaired TRITC
 %Column 9: Fraction of unpaired Cy5
 
-Filename_1 = '8144log'; %Reference data set
-load('/Users/Davidmcswiggen/Google_Drive/Jing_fish_images/Processed_data/8144log/8144log_all_reps.mat');
+Filename_1 = 'SET 1'; %Reference data set
+load('CHOOSE AN INTPUT FILEPATH FOR THE FIRST DATA SET');
 Data_set_1 = All_counting_stats_raw;
 
-Filename_2 = '8144_6h';
-load('/Users/Davidmcswiggen/Google_Drive/Jing_fish_images/Processed_data/8144_6h/8144_6h_all_reps.mat');
+Filename_2 = 'SET 2';
+load('CHOOSE AN INTPUT FILEPATH FOR THE SECOND DATA SET');
 Data_set_2 = All_counting_stats_raw;
 
 
